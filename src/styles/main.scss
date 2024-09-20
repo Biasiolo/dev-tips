@@ -26,7 +26,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background: radial-gradient(circle at top left, #00356e, transparent), 
                 radial-gradient(circle at bottom right, #60d100, transparent),
-                linear-gradient(135deg, #9fe26f 0%, #fff 100%);
+                linear-gradient(135deg, #6fe2bf 0%, #fff 100%);
     background-size: cover;
     background-attachment: fixed;
     color: $primary-color;
@@ -65,11 +65,12 @@ body {
     color: $lite-color;
     padding-top: 6rem;
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 700;
+        text-shadow: 0 2px 2px $secondary-color;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 400;
     }
 }
@@ -81,14 +82,20 @@ body {
     }
     .card {
         transition: box-shadow 0.3s ease;
-        background-color: lighten($grey-color, 25%);
+        background-color: transparent;
+        border: none;
+        background: radial-gradient(circle at top left, #e2e2eb, transparent), 
+                radial-gradient(circle at bottom right, #7a8186, transparent),
+                linear-gradient(85deg, #b9bbc2 0%, #fff 100%);
+    background-size: cover;
+    background-attachment: fixed;
         
         &:hover {
             box-shadow: 0 4px 8px $secondary-color;
         }
 
         .card-body {
-            background-color: lighten($grey-color, 25%);
+            
             border-radius: 8px;
         }
         .card-title {
@@ -118,8 +125,8 @@ body {
                     background-color: lighten($primary-color, 7%);
                     border: 2px solid lighten($primary-color, 7%);
                     font-size: 1.1rem;
-                    font-weight: 400;
-                    transition: transform 0.3s ease background-color 0.3s ease;
+                    font-weight: 500;
+                    transition: transform 0.1s ease, background-color 0.1s ease;
 
                     &:hover {
                         background-color: $secondary-color;
