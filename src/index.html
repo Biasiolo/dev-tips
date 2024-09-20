@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Tips</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dev Tips Resources</a>
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <!-- Adicione mais links se necessário -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center pb-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to Dev Tips</h1>
+            <p class="lead">A curated list of useful links for developers.</p>
+        </div>
+    </section>
+
+<!-- Categories Section -->
+<!-- Categories Section -->
+<section class="categories py-5 text-center">
+    <div class="container">
+        <div class="row">
+            <!-- Color Palettes -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-palette"></i> Color Palettes
+                        </h5>
+                        <p class="card-text">Discover and create beautiful color schemes to enhance your design projects.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://coolors.co/" target="_blank" aria-label="Visit Coolors - Color Palette Generator">Coolors</a></li>
+                            <li><a href="https://colorhunt.co/" target="_blank" aria-label="Visit Color Hunt - Color Inspiration">Color Hunt</a></li>
+                            <li><a href="https://color.adobe.com/" target="_blank" aria-label="Visit Adobe Color - Color Wheel and Themes">Adobe Color</a></li>
+                            <li><a href="https://mycolor.space/" target="_blank" aria-label="Visit ColorSpace - Advanced Color Palette Generator">ColorSpace</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sounds -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-music"></i> Sounds
+                        </h5>
+                        <p class="card-text">Access a vast library of royalty-free sound effects and music tracks for your projects.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://freesound.org/" target="_blank" aria-label="Visit Freesound - Free Sound Effects">Freesound</a></li>
+                            <li><a href="https://audiojungle.net/" target="_blank" aria-label="Visit AudioJungle - Premium Audio Assets">AudioJungle</a></li>
+                            <li><a href="http://soundbible.com/" target="_blank" aria-label="Visit SoundBible - Free Sounds">SoundBible</a></li>
+                            <li><a href="https://freemusicarchive.org/" target="_blank" aria-label="Visit Free Music Archive - Free Music Downloads">Free Music Archive</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Images & Illustrations -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-images"></i> Images
+                        </h5>
+                        <p class="card-text">Browse high-quality stock photos and illustrations to complement your creative work.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://placehold.jp/" target="_blank" aria-label="Visit Placehold - Placeholder Image Generator">Placehold</a></li>
+                            <li><a href="https://unsplash.com/" target="_blank" aria-label="Visit Unsplash - Free High-Resolution Photos">Unsplash</a></li>
+                            <li><a href="https://www.pexels.com/" target="_blank" aria-label="Visit Pexels - Free Stock Photos">Pexels</a></li>
+                            <li><a href="https://pixabay.com/" target="_blank" aria-label="Visit Pixabay - Free Images and Videos">Pixabay</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Badges & Icons -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-award"></i> Badges & Icons
+                        </h5>
+                        <p class="card-text">Enhance your projects with a variety of badges and icons for better visual appeal.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://profilebadges.vercel.app/" target="_blank" aria-label="Visit Profile Badges - Badge Generator">Profile Badges</a></li>
+                            <li><a href="https://fontawesome.com/" target="_blank" aria-label="Visit Font Awesome - Icon Library">Font Awesome</a></li>
+                            <li><a href="https://www.iconfinder.com/" target="_blank" aria-label="Visit Iconfinder - Icon Marketplace">Iconfinder</a></li>
+                            <li><a href="https://icons8.com/" target="_blank" aria-label="Visit Icons8 - Free Icons and Illustrations">Icons8</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Public APIs -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-cloud"></i> Public APIs
+                        </h5>
+                        <p class="card-text">Explore a wide range of public APIs to integrate powerful functionalities into your applications.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://public-apis.io/" target="_blank" aria-label="Visit Public APIs - Directory of Free APIs">Public APIs</a></li>
+                            <li><a href="https://rapidapi.com/" target="_blank" aria-label="Visit RapidAPI - API Marketplace">RapidAPI</a></li>
+                            <li><a href="https://www.programmableweb.com/" target="_blank" aria-label="Visit ProgrammableWeb - API Directory">ProgrammableWeb</a></li>
+                            <li><a href="https://apilist.fun/" target="_blank" aria-label="Visit API List - Fun and Useful APIs">API List</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- Google Tools -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fab fa-google"></i> Google Tools
+                        </h5>
+                        <p class="card-text">A suite of essential Google tools for developers and designers to enhance productivity.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://console.cloud.google.com/" target="_blank" aria-label="Visit Google Cloud Console - Cloud Resource Management">Google Cloud Console</a></li>
+                            <li><a href="https://fonts.google.com/" target="_blank" aria-label="Visit Google Fonts - Free Web Fonts">Google Fonts</a></li>
+                            <li><a href="https://developers.google.com/" target="_blank" aria-label="Visit Google Developers - Developer Resources">Google Developers</a></li>
+                            <li><a href="https://analytics.google.com/" target="_blank" aria-label="Visit Google Analytics - Website Analytics">Google Analytics</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Testing Tools -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-tachometer-alt"></i> Performance Testing
+                        </h5>
+                        <p class="card-text">Analyze and optimize the speed and performance of your websites with these essential tools.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" aria-label="Visit Google PageSpeed Insights - Performance Analysis">Google PageSpeed Insights</a></li>
+                            <li><a href="https://www.webpagetest.org/" target="_blank" aria-label="Visit WebPageTest - Website Performance Testing">WebPageTest</a></li>
+                            <li><a href="https://gtmetrix.com/" target="_blank" aria-label="Visit GTmetrix - Website Performance Monitoring">GTmetrix</a></li>
+                            <li><a href="https://web.dev/measure/" target="_blank" aria-label="Visit Web.dev - Web Performance Metrics">Web.dev</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Tools -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-tools"></i> Development Tools
+                        </h5>
+                        <p class="card-text">Essential tools to streamline your coding workflow and collaborate effectively.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.postman.com/" target="_blank" aria-label="Visit Postman - API Development Tool">Postman</a></li>
+                            <li><a href="https://code.visualstudio.com/" target="_blank" aria-label="Visit Visual Studio Code - Code Editor">Visual Studio Code</a></li>
+                            <li><a href="https://github.com/" target="_blank" aria-label="Visit GitHub - Version Control and Collaboration">GitHub</a></li>
+                            <li><a href="https://www.docker.com/" target="_blank" aria-label="Visit Docker - Containerization Platform">Docker</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Management -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-project-diagram"></i> Project Management
+                        </h5>
+                        <p class="card-text">Efficiently manage your projects and collaborate with your team using these tools.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://trello.com/" target="_blank" aria-label="Visit Trello - Project Management Tool">Trello</a></li>
+                            <li><a href="https://www.asana.com/" target="_blank" aria-label="Visit Asana - Task Management Platform">Asana</a></li>
+                            <li><a href="https://www.jira.com/" target="_blank" aria-label="Visit Jira - Agile Project Management">Jira</a></li>
+                            <li><a href="https://monday.com/" target="_blank" aria-label="Visit Monday.com - Work Operating System">Monday.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Tools -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-robot"></i> AI Tools
+                        </h5>
+                        <p class="card-text">Leverage artificial intelligence tools to enhance your productivity and creativity.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://openai.com/" target="_blank" aria-label="Visit OpenAI - AI Research and Deployment">OpenAI</a></li>
+                            <li><a href="https://notion.so" target="_blank" aria-label="Visit Notion - AI-Powered Workspace">Notion</a></li>
+                            <li><a href="https://huggingface.co/" target="_blank" aria-label="Visit Hugging Face - AI and Machine Learning Models">Hugging Face</a></li>
+                            <li><a href="https://www.tensorflow.org/" target="_blank" aria-label="Visit TensorFlow - Machine Learning Library">TensorFlow</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Generators -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-code"></i> Code Generators
+                        </h5>
+                        <p class="card-text">Generate random data, placeholder text, and more to accelerate your development process.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.json-generator.com/" target="_blank" aria-label="Visit JSON Generator - Generate JSON Data">JSON Generator</a></li>
+                            <li><a href="https://www.lipsum.com/" target="_blank" aria-label="Visit Lorem Ipsum - Placeholder Text Generator">Lorem Ipsum</a></li>
+                            <li><a href="https://www.mockaroo.com/" target="_blank" aria-label="Visit Mockaroo - Fake Data Generator">Mockaroo</a></li>
+                            <li><a href="https://randomuser.me/" target="_blank" aria-label="Visit RandomUser - Generate Random User Data">RandomUser</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documentation & References -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-book"></i> References
+                        </h5>
+                        <p class="card-text">Access comprehensive documentation and references to support your development needs.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://developer.mozilla.org/" target="_blank" aria-label="Visit MDN Web Docs - Developer Documentation">MDN Web Docs</a></li>
+                            <li><a href="https://www.w3schools.com/" target="_blank" aria-label="Visit W3Schools - Web Development Tutorials">W3Schools</a></li>
+                            <li><a href="https://devdocs.io/" target="_blank" aria-label="Visit DevDocs - Unified API Documentation">DevDocs</a></li>
+                            <li><a href="https://stackoverflow.com/" target="_blank" aria-label="Visit Stack Overflow - Developer Community">Stack Overflow</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hosting & Deployment -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-server"></i> Host & Deployment
+                        </h5>
+                        <p class="card-text">Reliable hosting and deployment platforms to launch and scale your web applications.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://vercel.com/" target="_blank" aria-label="Visit Vercel - Deployment Platform">Vercel</a></li>
+                            <li><a href="https://www.netlify.com/" target="_blank" aria-label="Visit Netlify - Web Hosting and Deployment">Netlify</a></li>
+                            <li><a href="https://www.heroku.com/" target="_blank" aria-label="Visit Heroku - Cloud Platform">Heroku</a></li>
+                            <li><a href="https://aws.amazon.com/amplify/" target="_blank" aria-label="Visit AWS Amplify - Hosting and Deployment">AWS Amplify</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JavaScript Library -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fab fa-js-square"></i> JS Libraries
+                        </h5>
+                        <p class="card-text">Enhance your web applications with these powerful JavaScript libraries.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://lodash.com/" target="_blank" aria-label="Visit Lodash - JavaScript Utility Library">Lodash</a></li>
+                            <li><a href="https://threejs.org/" target="_blank" aria-label="Visit Three.js - 3D Library for JavaScript">Three.js</a></li>
+                            <li><a href="https://axios-http.com/" target="_blank" aria-label="Visit Axios - Promise-based HTTP Client">Axios</a></li>
+                            <li><a href="https://reactjs.org/" target="_blank" aria-label="Visit React - JavaScript Library for Building User Interfaces">React</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Miscellaneous Tools -->
+            <div class="col-md-4 mb-3 rounded">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-th"></i> Miscellaneous
+                        </h5>
+                        <p class="card-text">Explore a variety of tools that don't fit into other categories but are essential for your workflow.</p>
+                        <ul class="list-unstyled">
+                            <li><a href="https://animate.style/" target="_blank" aria-label="Visit Animate.css - CSS Animation Library">Animate.css</a></li>
+                            <li><a href="https://tailwindcss.com/" target="_blank" aria-label="Visit Tailwind CSS - Utility-First CSS Framework">Tailwind CSS</a></li>
+                            <li><a href="https://canva.com/" target="_blank" aria-label="Visit Canva - Graphic Design Platform">Canva</a></li>
+                            <li><a href="https://figma.com/" target="_blank" aria-label="Visit Figma - UI/UX Design Tool">Figma</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Dev Tips. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

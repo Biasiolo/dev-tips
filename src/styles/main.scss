@@ -1,0 +1,151 @@
+// Importando Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Variáveis Personalizadas
+$primary-color: #00356e;
+$secondary-color: #091f33;
+$lite-color: #f2f2ff;
+$grey-color: #bab8b5;
+
+
+// Reset básico de CSS
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $grey-color;
+}
+
+// Estilizando a Navbar
+.navbar {
+    position: fixed;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 99;
+
+    backdrop-filter: blur(10px); // Applies blur effect
+    -webkit-backdrop-filter: blur(10px); // Safari support
+
+
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        color: $lite-color;
+        text-shadow: 0 2px 2px $secondary-color;
+    }
+
+    a {
+        color: $lite-color;
+        text-shadow: 0 2px 2px $secondary-color;
+        &:hover {
+            color: $grey-color;
+        }
+    }
+}
+
+// Hero Section
+.hero {
+    background-color: $primary-color;
+    color: #fff;
+    padding-top: 6rem;
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+// Categories Section
+.categories {
+    i {
+        color: $primary-color;
+    }
+    .card {
+        transition: box-shadow 0.3s ease;
+        background-color: lighten($grey-color, 25%);
+        
+        &:hover {
+            box-shadow: 0 4px 8px $secondary-color;
+        }
+
+        .card-body {
+            background-color: lighten($grey-color, 25%);
+            border-radius: 8px;
+        }
+        .card-title {
+            color: $primary-color;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 700;
+            background-color: lighten($grey-color, 20%);
+            width: 100%;
+            border-radius: 8px;
+            padding:0.5rem;
+        }
+        ul {
+            padding: 0;
+            li {
+                margin-bottom: 0.5rem;
+
+                
+                a {
+                    display: block; // Torna o link um elemento de bloco
+                    width: 100%; // Ocupa toda a largura do pai
+                    padding: 0.5rem 1rem; // Espaçamento interno
+                    color: $lite-color;
+                    border-radius: 0.25rem;
+                    transition: background-color 0.3s, color 0.3s;
+                    text-decoration: none;
+                    background-color: lighten($primary-color, 7%);
+                    border: 2px solid lighten($primary-color, 7%);
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    transition: transform 0.3s ease background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: $secondary-color;
+                        transform: scale(0.99);
+                    }
+
+                    // Para dispositivos móveis, aumentar a área clicável
+                    @media (max-width: 768px) {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Footer
+footer {
+    background-color: $secondary-color;
+    p {
+        margin: 0;
+    }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
