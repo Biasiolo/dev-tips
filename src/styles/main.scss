@@ -24,7 +24,12 @@ $grey-color: #bab8b5;
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: $grey-color;
+    background: radial-gradient(circle at top left, #00356e, transparent), 
+                radial-gradient(circle at bottom right, #60d100, transparent),
+                linear-gradient(135deg, #9fe26f 0%, #fff 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: $primary-color;
 }
 
 // Estilizando a Navbar
@@ -57,15 +62,15 @@ body {
 
 // Hero Section
 .hero {
-    background-color: $primary-color;
-    color: #fff;
+    color: $lite-color;
     padding-top: 6rem;
     h1 {
         font-size: 3rem;
         font-weight: 700;
     }
     p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 400;
     }
 }
 
