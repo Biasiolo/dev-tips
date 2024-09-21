@@ -25,8 +25,8 @@ $green-color: #04a079;
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: radial-gradient(circle at top left, #004997, transparent),
-        radial-gradient(circle at bottom right, #0da1ac, transparent),
+    background: radial-gradient(circle at top left, #0da1ac, transparent),
+        radial-gradient(circle at bottom right, #006c97, transparent),
         linear-gradient(135deg, #d113f7 0%, #ff0fdf 100%);
     background-size: cover;
     background-attachment: fixed;
@@ -43,7 +43,7 @@ body {
 
 // Estilizando a Navbar
 .navbar {
-    top: 3%;
+    top: 3.5%;
     position: fixed;
     padding: 1rem;
     width: 100%;
