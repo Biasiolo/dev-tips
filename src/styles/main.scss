@@ -107,9 +107,9 @@ body {
         transition: box-shadow 0.3s ease;
         background-color: transparent;
         border: none;
-        background: radial-gradient(circle at top left, hsla(240, 11%, 93%, 0.6), transparent),
-            radial-gradient(circle at bottom right, hsla(206, 3%, 58%, 0.6), transparent),
-            linear-gradient(85deg, hsla(227, 7%, 74%, 0.6) 0%, hsla(189, 43%, 70%, 0.6) 100%);
+        background: radial-gradient(circle at top left, hsla(0, 0%, 96%, 0.8), transparent),
+            radial-gradient(circle at bottom right, hsla(166, 13%, 54%, 0.7), transparent),
+            linear-gradient(135deg, hsla(66, 19%, 48%, 0.6) 0%, hsla(251, 100%, 85%, 0.6) 100%);
         background-size: cover;
         background-attachment: fixed;
 
