@@ -107,9 +107,9 @@ body {
         transition: box-shadow 0.3s ease;
         background-color: transparent;
         border: none;
-        background: radial-gradient(circle at top left, hsla(0, 0%, 96%, 0.8), transparent),
-            radial-gradient(circle at bottom right, hsla(166, 13%, 54%, 0.7), transparent),
-            linear-gradient(135deg, hsla(66, 19%, 48%, 0.6) 0%, hsla(251, 100%, 85%, 0.6) 100%);
+        background: radial-gradient(circle at top left, hsla(0, 0%, 100%, 0.8), transparent),
+            radial-gradient(circle at bottom right, hsla(202, 15%, 57%, 0.7), transparent),
+            linear-gradient(135deg, hsla(234, 100%, 89%, 0.6) 0%, hsla(123, 21%, 83%, 0.6) 100%);
         background-size: cover;
         background-attachment: fixed;
 
@@ -123,11 +123,11 @@ body {
         }
 
         .card-title {
-            color: $primary-color;
+            color: lighten($primary-color, 5%) ;
             margin-bottom: 1rem;
             font-size: 2rem;
             font-weight: 700;
-            background-color: lighten($grey-color, 7%);
+            background-color: hsla(240, 7%, 77%, 0.6);
             width: 100%;
             border-radius: 8px;
             padding: 0.5rem;
