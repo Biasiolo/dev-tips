@@ -5,7 +5,8 @@
 $primary-color: #00356e;
 $secondary-color: #091f33;
 $lite-color: #f2f2ff;
-$grey-color: #bab8b5;
+$grey-color: #c9c6c1;
+$green-color: #02ad6c;
 
 
 // Reset básico de CSS
@@ -24,9 +25,9 @@ $grey-color: #bab8b5;
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: radial-gradient(circle at top left, #00356e, transparent), 
-                radial-gradient(circle at bottom right, #60d100, transparent),
-                linear-gradient(135deg, #6fe2bf 0%, #fff 100%);
+    background: radial-gradient(circle at top left, #004997, transparent), 
+                radial-gradient(circle at bottom right, #0da1ac, transparent),
+                linear-gradient(135deg, #d113f7  0%, #ff0fdf 100%);
     background-size: cover;
     background-attachment: fixed;
     color: $primary-color;
@@ -78,15 +79,15 @@ body {
 // Categories Section
 .categories {
     i {
-        color: $primary-color;
+        color: $green-color;
     }
     .card {
         transition: box-shadow 0.3s ease;
         background-color: transparent;
         border: none;
-        background: radial-gradient(circle at top left, #e2e2eb, transparent), 
-                radial-gradient(circle at bottom right, #7a8186, transparent),
-                linear-gradient(85deg, #b9bbc2 0%, #fff 100%);
+        background: radial-gradient(circle at top left, #eaeaee, transparent), 
+                radial-gradient(circle at bottom right, #909497, transparent),
+                linear-gradient(85deg, #b9bbc2 0%, #9deffd 100%);
     background-size: cover;
     background-attachment: fixed;
         
@@ -103,7 +104,7 @@ body {
             margin-bottom: 1rem;
             font-size: 2rem;
             font-weight: 700;
-            background-color: lighten($grey-color, 20%);
+            background-color: lighten($grey-color, 15%);
             width: 100%;
             border-radius: 8px;
             padding:0.5rem;
