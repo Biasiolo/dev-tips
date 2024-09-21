@@ -6,28 +6,28 @@ $primary-color: #00356e;
 $secondary-color: #091f33;
 $lite-color: #f2f2ff;
 $grey-color: #c9c6c1;
-$green-color: #02ad6c;
+$green-color: #04a079;
 
 
 // Reset básico de CSS
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  vertical-align: baseline;
-  scroll-behavior: smooth;
-  text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: radial-gradient(circle at top left, #004997, transparent), 
-                radial-gradient(circle at bottom right, #0da1ac, transparent),
-                linear-gradient(135deg, #d113f7  0%, #ff0fdf 100%);
+    background: radial-gradient(circle at top left, #004997, transparent),
+        radial-gradient(circle at bottom right, #0da1ac, transparent),
+        linear-gradient(135deg, #d113f7 0%, #ff0fdf 100%);
     background-size: cover;
     background-attachment: fixed;
     color: $primary-color;
@@ -40,11 +40,8 @@ body {
     width: 100%;
     margin: 0 auto;
     z-index: 99;
-
     backdrop-filter: blur(10px); // Applies blur effect
     -webkit-backdrop-filter: blur(10px); // Safari support
-
-
 
     .navbar-brand {
         font-size: 1.5rem;
@@ -55,6 +52,8 @@ body {
     a {
         color: $lite-color;
         text-shadow: 0 2px 2px $secondary-color;
+        font-size: 1.2rem;
+
         &:hover {
             color: $grey-color;
         }
@@ -65,11 +64,13 @@ body {
 .hero {
     color: $lite-color;
     padding-top: 6rem;
+
     h1 {
         font-size: 4rem;
         font-weight: 700;
         text-shadow: 0 2px 2px $secondary-color;
     }
+
     p {
         font-size: 2rem;
         font-weight: 400;
@@ -81,46 +82,62 @@ body {
     i {
         color: $green-color;
     }
+
+    .slogan {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $lite-color;
+        padding: 2rem 1rem;
+    }
+
     .card {
         transition: box-shadow 0.3s ease;
         background-color: transparent;
         border: none;
-        background: radial-gradient(circle at top left, #eaeaee, transparent), 
-                radial-gradient(circle at bottom right, #909497, transparent),
-                linear-gradient(85deg, #b9bbc2 0%, #9deffd 100%);
-    background-size: cover;
-    background-attachment: fixed;
-        
+        background: radial-gradient(circle at top left, rgba(234, 234, 238, 0.6), transparent),
+            radial-gradient(circle at bottom right, rgba(144, 148, 151, 0.6), transparent),
+            linear-gradient(85deg, rgba(185, 187, 194, 0.6) 0%, rgba(157, 239, 253, 0.6) 100%);
+        background-size: cover;
+        background-attachment: fixed;
+
         &:hover {
             box-shadow: 0 4px 8px $secondary-color;
         }
 
         .card-body {
-            
+
             border-radius: 8px;
         }
+
         .card-title {
             color: $primary-color;
             margin-bottom: 1rem;
             font-size: 2rem;
             font-weight: 700;
-            background-color: lighten($grey-color, 15%);
+            background-color: lighten($grey-color, 7%);
             width: 100%;
             border-radius: 8px;
-            padding:0.5rem;
+            padding: 0.5rem;
         }
+
+        p {
+            font-size: 1rem;
+            color: $secondary-color;
+            font-weight: 400;
+        }
+
         ul {
             padding: 0;
+
             li {
                 margin-bottom: 0.5rem;
 
-                
                 a {
                     display: block; // Torna o link um elemento de bloco
                     width: 100%; // Ocupa toda a largura do pai
                     padding: 0.5rem 1rem; // Espaçamento interno
                     color: $lite-color;
-                    border-radius: 0.25rem;
+                    border-radius: 0.5rem;
                     transition: background-color 0.3s, color 0.3s;
                     text-decoration: none;
                     background-color: lighten($primary-color, 7%);
@@ -144,10 +161,60 @@ body {
     }
 }
 
+.seo-banner {
+    img {
+        width: 100%;
+        height: 15rem;
+        /* Definimos a altura da imagem */
+        object-fit: cover;
+        /* Isso garante que a imagem seja cortada ao invés de distorcida */
+        object-position: center;
+        /* Centraliza a imagem */
+    }
+}
+
+.seo-content {
+    color: $lite-color;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-shadow: 0 2px 2px $secondary-color;
+    }
+
+    p {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+}
+
+.copy {
+    background-color: transparent;
+    padding: 1rem 0;
+    text-align: center;
+    padding-bottom: 60px;
+
+    a {
+        text-decoration: none;
+        color: $lite-color;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1rem;
+        color: $lite-color;
+        font-weight: bold;
+    }
+}
 
 // Footer
 footer {
-    background-color: $secondary-color;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    backdrop-filter: blur(10px); // Applies blur effect
+    -webkit-backdrop-filter: blur(10px); // Safari support
+
     p {
         margin: 0;
     }
@@ -158,6 +225,7 @@ footer {
     .hero h1 {
         font-size: 2.5rem;
     }
+
     .hero p {
         font-size: 1rem;
     }
