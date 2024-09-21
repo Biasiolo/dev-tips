@@ -33,8 +33,17 @@ body {
     color: $primary-color;
 }
 
+.cab {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    z-index: 99;
+}
+
 // Estilizando a Navbar
 .navbar {
+    top: 3%;
     position: fixed;
     padding: 1rem;
     width: 100%;
@@ -58,12 +67,16 @@ body {
             color: $grey-color;
         }
     }
+    a.nav-link.active {
+        border-radius: 8px;
+        margin-top: 4px;
+    }
 }
 
 // Hero Section
 .hero {
     color: $lite-color;
-    padding-top: 6rem;
+    padding-top: 6.4rem;
 
     h1 {
         font-size: 4rem;
@@ -94,9 +107,9 @@ body {
         transition: box-shadow 0.3s ease;
         background-color: transparent;
         border: none;
-        background: radial-gradient(circle at top left, rgba(234, 234, 238, 0.6), transparent),
-            radial-gradient(circle at bottom right, rgba(144, 148, 151, 0.6), transparent),
-            linear-gradient(85deg, rgba(185, 187, 194, 0.6) 0%, rgba(157, 239, 253, 0.6) 100%);
+        background: radial-gradient(circle at top left, hsla(240, 11%, 93%, 0.6), transparent),
+            radial-gradient(circle at bottom right, hsla(206, 3%, 58%, 0.6), transparent),
+            linear-gradient(85deg, hsla(227, 7%, 74%, 0.6) 0%, hsla(189, 43%, 70%, 0.6) 100%);
         background-size: cover;
         background-attachment: fixed;
 
