@@ -74,7 +74,7 @@ body {
 // Hero Section
 .hero {
     color: $lite-color;
-    padding-top: 6.4rem;
+    padding-top: 8rem;
 
     h1 {
         font-size: 4rem;
@@ -227,6 +227,10 @@ footer {
     backdrop-filter: blur(10px); // Applies blur effect
     -webkit-backdrop-filter: blur(10px); // Safari support
 
+    img {
+        width: 2.5rem;
+    }
+
     p {
         margin: 0;
     }
@@ -234,6 +238,10 @@ footer {
 
 // Responsividade
 @media (max-width: 768px) {
+    .hero {
+        padding-top: 10rem;
+    }
+    
     .hero h1 {
         font-size: 2.5rem;
     }
