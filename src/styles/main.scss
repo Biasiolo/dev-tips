@@ -1,10 +1,10 @@
 
 // Variáveis Personalizadas
-$primary-color: #00356e;
+$primary-color: #003b79;
 $secondary-color: #091f33;
 $lite-color: #f2f2ff;
 $grey-color: #d4d2ce;
-$green-color: #00a86b;
+$green-color: #00a078;
 
 
 // Reset básico de CSS
@@ -92,6 +92,7 @@ body {
 .categories {
     i {
         color: $green-color;
+        text-shadow: 0 1px 1px $lite-color;
     }
 
     .slogan {
@@ -105,9 +106,9 @@ body {
         transition: box-shadow 0.3s ease;
         background-color: transparent;
         border: none;
-        background: radial-gradient(circle at top left, hsla(0, 0%, 100%, 0.7), transparent),
-            radial-gradient(circle at bottom right, hsla(171, 22%, 82%, 0.7), transparent),
-            linear-gradient(135deg, hsla(234, 100%, 89%, 0.7) 0%, hsla(120, 15%, 76%, 0.7) 100%);
+        background: radial-gradient(circle at top left, hsla(0, 0%, 100%, 0.8), transparent),
+            radial-gradient(circle at bottom right, hsla(169, 28%, 92%, 0.6), transparent),
+            linear-gradient(135deg, hsla(73, 100%, 89%, 0.7) 0%, hsla(101, 31%, 86%, 0.7) 100%);
         background-size: cover;
         background-attachment: fixed;
         box-shadow: 0 4px 4px $primary-color;
@@ -126,10 +127,11 @@ body {
             margin-bottom: 1rem;
             font-size: 2rem;
             font-weight: 700;
-            background-color: hsla(240, 7%, 77%, 0.6);
+            background: linear-gradient(90deg, $grey-color 0%, hsla(240, 4%, 82%, 0.8) 80%);;
             width: 100%;
             border-radius: 8px;
             padding: 0.5rem;
+            text-shadow: 0 1px 1px $lite-color;
         }
 
         p {
@@ -152,14 +154,14 @@ body {
                     border-radius: 0.5rem;
                     transition: background-color 0.3s, color 0.3s;
                     text-decoration: none;
-                    background-color: $primary-color;
+                    background: linear-gradient(180deg, #0c3155 0%, $primary-color 70%);
                     border: 2px solid $primary-color;
                     font-size: 1.1rem;
                     font-weight: 500;
-                    transition: transform 0.1s ease, background-color 0.1s ease;
+                    transition: transform 0.1s ease, hover 0.1s ease;
 
                     &:hover {
-                        background-color: $secondary-color;
+                        background: $secondary-color;
                         transform: scale(0.99);
                     }
 
