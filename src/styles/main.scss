@@ -1,7 +1,7 @@
 
 // Variáveis Personalizadas
 $primary-color: #003b79;
-$secondary-color: #091f33;
+$secondary-color: #00264e;
 $lite-color: #f2f2ff;
 $grey-color: #d4d2ce;
 $green-color: #00a078;
@@ -71,7 +71,7 @@ body {
         }
     }
     a.nav-link.active {
-        border-radius: 8px;
+        border-radius: 6px;
         margin-top: 4px;
         background: $secondary-color;
     }
@@ -125,7 +125,7 @@ body {
 
         .card-body {
 
-            border-radius: 8px;
+            border-radius: 6px;
         }
 
         .card-title {
@@ -135,7 +135,7 @@ body {
             font-weight: 700;
             background: linear-gradient(90deg, hsla(40, 7%, 82%, 0.9) 0%, hsla(40, 6%, 81%, 0.8) 80%);;
             width: 100%;
-            border-radius: 8px;
+            border-radius: 6px;
             padding: 0.5rem;
             text-shadow: 0 1px 1px $lite-color;
         }
@@ -157,18 +157,18 @@ body {
                     width: 100%; // Ocupa toda a largura do pai
                     padding: 0.5rem 1rem; // Espaçamento interno
                     color: $lite-color;
-                    border-radius: 0.5rem;
+                    border-radius: 6px;
                     transition: background-color 0.3s, color 0.3s;
                     text-decoration: none;
-                    background: linear-gradient(180deg, #0c3155 0%, $primary-color 70%);
-                    border: 2px solid $primary-color;
+                    background: linear-gradient(180deg, #002c5c 0%, #003b7a 70%);
+                    border: 1px solid $primary-color;
                     font-size: 1.1rem;
                     font-weight: 500;
-                    transition: transform 0.1s ease, hover 0.1s ease;
+                    transition: transform, color 0.2s ease;
 
                     &:hover {
                         background: $secondary-color;
-                        transform: scale(0.99);
+                        color: $green-color;
                     }
 
                     // Para dispositivos móveis, aumentar a área clicável
