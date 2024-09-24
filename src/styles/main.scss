@@ -1,4 +1,3 @@
-
 // Variáveis Personalizadas
 $primary-color: #003b79;
 $secondary-color: #00264e;
@@ -67,13 +66,18 @@ body {
         font-size: 1.2rem;
 
         &:hover {
-            color: $grey-color;
+            color: $green-color;
         }
     }
+
     a.nav-link.active {
         border-radius: 6px;
         margin-top: 4px;
         background: $secondary-color;
+
+        &:hover {
+            color: $green-color;
+        }
     }
 }
 
@@ -133,7 +137,8 @@ body {
             margin-bottom: 1rem;
             font-size: 2rem;
             font-weight: 700;
-            background: linear-gradient(90deg, hsla(40, 7%, 82%, 0.9) 0%, hsla(40, 6%, 81%, 0.8) 80%);;
+            background: linear-gradient(90deg, hsla(40, 7%, 82%, 0.9) 0%, hsla(40, 6%, 81%, 0.8) 80%);
+            ;
             width: 100%;
             border-radius: 6px;
             padding: 0.5rem;
@@ -250,7 +255,7 @@ footer {
     .hero {
         padding-top: 10rem;
     }
-    
+
     .hero h1 {
         font-size: 2.5rem;
     }
