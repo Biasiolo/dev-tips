@@ -63,7 +63,7 @@ body {
     a {
         color: $lite-color;
         text-shadow: 0 2px 2px $secondary-color;
-        font-size: 1.2rem;
+        font-size: 1rem;
 
         &:hover {
             color: $green-color;
@@ -247,6 +247,7 @@ footer {
 
     p {
         margin: 0;
+        font-size: 12px;
     }
 }
 
