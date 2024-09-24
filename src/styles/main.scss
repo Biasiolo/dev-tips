@@ -37,6 +37,7 @@ body {
     margin: 0 auto;
     top: 0;
     z-index: 99;
+    background-color: $secondary-color;
 }
 
 // Estilizando a Navbar
@@ -56,6 +57,10 @@ body {
         text-shadow: 0 2px 2px $secondary-color;
     }
 
+    .navbar-toggler {
+        background: $secondary-color;
+    }
+
     a {
         color: $lite-color;
         text-shadow: 0 2px 2px $secondary-color;
@@ -68,6 +73,7 @@ body {
     a.nav-link.active {
         border-radius: 8px;
         margin-top: 4px;
+        background: $secondary-color;
     }
 }
 
@@ -228,6 +234,7 @@ footer {
     margin: 0 auto;
     backdrop-filter: blur(10px); // Applies blur effect
     -webkit-backdrop-filter: blur(10px); // Safari support
+    background: $secondary-color;
 
     img {
         width: 2.5rem;
